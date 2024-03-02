@@ -8,17 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="add-icon-container">
+        <p>Add task <i class="fa-solid fa-circle-plus"></i></p>
+    </div>
     <div class="card card-time">
-        <p class="card-time-content"><span class="time">Time - </span> 9:00AM</p>
+        <p class="card-time-content"><span class="time">Time - </span><span id="clock"></span></p>
     </div>
     <div class="card card-task">
-        <p class="card-task-content"><span class="task">Current Task - </span>Plan a trip to a new city or country and
-            book all the necessary arrangements.</p>
+        <p class="card-task-content"><span class="task">Current Task - </span><span id="message">Plan a trip to a new
+                city or country and
+                book all the necessary arrangements.</span></p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
