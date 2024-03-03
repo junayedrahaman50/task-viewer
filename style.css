@@ -47,7 +47,7 @@ body {
 }
 
 .card-time-content {
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 .card-task {
@@ -60,7 +60,7 @@ body {
 }
 
 .add-icon-container {
-  padding: 2rem;
+  padding: 2.4rem;
   position: absolute;
   right: 5%;
   bottom: 5%;
@@ -69,4 +69,5 @@ body {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   font-size: 2.4rem;
   cursor: pointer;
+  user-select: none;
 }
