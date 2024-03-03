@@ -13,16 +13,29 @@
 </head>
 
 <body>
-    <div class="add-icon-container">
-        <p>Add task <i class="fa-solid fa-circle-plus"></i></p>
+    <div class="modal-form hidden">
+        <div class="card card-form">
+            <button class="close-modal">×</button>
+            <h2>Add Task</h2>
+
+            <input type="text" class="task-content" placeholder="Enter task name" required>
+            <input type="text" class="task-content" placeholder="Enter task content" required>
+            <button class="submit-button">Submit task</button>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, suscipit quo cumque perferendis praesentium
+                animi labore nisi sunt perspiciatis aspernatur, rerum illum fuga. Eum necessitatibus modi odit?
+                Recusandae assumenda, rerum pariatur, iusto dolor, ratione mollitia aperiam nam cum ab magnam!</p> -->
+        </div>
     </div>
+    <button class="add-icon-container">
+        <p>Add task <i class="fa-solid fa-circle-plus"></i></p>
+    </button>
     <div class="card card-time">
         <p class="card-time-content"><span class="time">Time - </span><span id="clock"></span></p>
     </div>
     <div class="card card-task">
         <p class="card-task-content"><span class="task">Current Task - </span><span id="message">None</span></p>
     </div>
-
+    <div class="overlay hidden"></div>
     <script src="script.js"></script>
 </body>
 

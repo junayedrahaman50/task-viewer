@@ -55,3 +55,28 @@ setInterval(updateClock, 1000);
 
 // Initial call to display the clock immediately
 updateClock();
+
+/* Modal */
+const modal = document.querySelector(".modal-form");
+const overlay = document.querySelector(".overlay");
+const btnCloseModal = document.querySelector(".close-modal");
+const addTaskBtn = document.querySelector(".add-icon-container");
+const submitBtn = document.querySelector(".submit-button");
+
+const modalActions = function () {
+  modal.classList.toggle("hidden");
+  overlay.classList.toggle("hidden");
+};
+
+btnCloseModal.addEventListener("click", modalActions);
+// overlay.addEventListener("click", modalActions);
+addTaskBtn.addEventListener("click", modalActions);
+submitBtn.addEventListener("click", modalActions);
+
+/* Listening to the whole document */
+document.addEventListener("keydown", function (e) {
+  console.log(e.key);
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    modalActions();
+  }
+});
