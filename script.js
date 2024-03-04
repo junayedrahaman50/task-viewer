@@ -80,3 +80,14 @@ document.addEventListener("keydown", function (e) {
     modalActions();
   }
 });
+
+/* Resizable textarea */
+const taskInputContent = document.querySelector(".task-input--content");
+taskInputContent.addEventListener("keyup", (e) => {
+  taskInputContent.style.height = "auto";
+  let scHeight = e.target.scrollHeight;
+  // actual height of the texarea is 150px defined in css but 1px border in top and bottom also included so it is 148px
+  console.log(scHeight);
+  // using template string literal
+  taskInputContent.style.height = `${scHeight}px`;
+});
